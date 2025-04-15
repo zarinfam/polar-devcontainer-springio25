@@ -1,3 +1,7 @@
+## 💡 This fork modifies the original [Cloud Native Spring in Action](https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/sb-3-main/Chapter11/11-end) (Chapter 11) and added Devcontainer configs to it.
+
+
+
 # Applications deployment on a local Kubernetes cluster
 
 Tilt is a convenient tool for setting up a local development workflow on Kubernetes.
@@ -12,3 +16,12 @@ When each project is tracked in a separate Git repository, you can either ensure
 in sibling folders on your localhost or let Tilt do that.
 
 For more information, refer to [Many Tiltfiles and Many Repos](https://docs.tilt.dev/multiple_repos.html).
+
+# Portforwarding in CDEs
+
+`minikube ip --profile polar`
+
+forward port 80 in IDE or Devcontainer 
+
+`sudo socat TCP-LISTEN:80,fork TCP:localhost:CDE_FORWARDED_PORT`
+

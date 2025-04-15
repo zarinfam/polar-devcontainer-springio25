@@ -1,0 +1,9 @@
+# Deploy
+k8s_yaml(['services/keycloak-config.yml', 'services/keycloak.yml'])
+k8s_yaml(['services/postgresql.yml'])
+k8s_yaml(['services/redis.yml'])
+k8s_yaml(['services/rabbitmq.yml'])
+k8s_yaml(['services/polar-ui.yml'])
+
+# Manage
+k8s_resource('polar-ui', port_forwards=['9004'])
