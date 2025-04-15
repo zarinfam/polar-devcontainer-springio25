@@ -25,7 +25,25 @@
 		"ghcr.io/lentzi90/features/tilt:0": {
 			"version": "v0.33.17"
 		}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"vmware.vscode-boot-dev-pack",
+				"ms-kubernetes-tools.vscode-kubernetes-tools",
+				"eamodio.gitlens"
+			],
+			"settings": {	
+				"terminal.integrated.shell.linux": "/bin/zsh"
+				// "dotfiles.repository": "https://github.com/NikiforovAll/dotfiles.git",
+				// "dotfiles.installCommand": "~/dotfiles/src/dev-container/boot/install.sh",
+				// "dotfiles.targetPath": "~/dotfiles"
+			}
+		}
 	}
+	// "forwardPorts": ["80:57905"]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
